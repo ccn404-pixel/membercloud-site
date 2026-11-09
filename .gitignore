@@ -1,0 +1,15 @@
+# Cloudflare
+.wrangler/
+
+# Python
+__pycache__/
+*.pyc
+
+# Build output (regenerate with ./build.sh)
+dist/
+
+# OS
+.DS_Store
+
+# Env / secrets (never commit)
+.env*

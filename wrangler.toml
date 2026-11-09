@@ -1,0 +1,12 @@
+name = "membercloud-review"
+pages_build_output_dir = "./dist"
+compatibility_date = "2026-10-01"
+
+[vars]
+TO_EMAIL = "info@member-cloud.com"
+# The sending domain must be verified in Resend (SPF/DKIM on member-cloud.com).
+FROM_EMAIL = "MemberCloud <chat@member-cloud.com>"
+# AI replies: PROVIDER = "anthropic" (default) or "openai"; MODEL optional.
+PROVIDER = "anthropic"
+# Secrets (never commit): wrangler pages secret put RESEND_API_KEY --project-name membercloud-review
+#   plus ANTHROPIC_API_KEY (or OPENAI_API_KEY when PROVIDER = "openai")
